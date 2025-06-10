@@ -36,7 +36,7 @@ if config.LOGINS:
             st.error("Username not provided in URL parameter 'username'.")
             st.stop()
 
-        secret_password = st.secrets["PASSWORD"]
+        secret_password = st.secrets["passwords"]["PASSWORD"]
 
         if url_password and hmac.compare_digest(url_password, secret_password):
             st.session_state.username = username
