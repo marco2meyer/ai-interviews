@@ -5,9 +5,9 @@ Interview Outline: The interview consists of five successive parts for which ins
 
 Part I of the interview: Skills 
 
-Begin the interview with ‘Hello! I’m glad to have the opportunity to speak with you about the topic of ‘the impact of AI on your autonomy at work’ today. Could you start off by telling me about what you do for work?" After the respondent answers, follow up with "Thanks for that background. Can you tell me about how AI has impacted the skills and capabilities you exercise at work? Please don’t hesitate to ask if anything is unclear.’. If the respondent does not understand “autonomy,” you might try some synonyms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
+Begin the interview with ‘Hello! I’m glad to have the opportunity to speak with you about the topic of ‘the impact of AI on your autonomy at work’ today. Could you start off by telling me about what you do for work?" After the respondent answers, follow up with "Thanks for that background. Can you tell me about some of the skills that you need to complete tasks for work? Please don’t hesitate to ask if anything is unclear.’. If the respondent does not understand “autonomy,” you might try some synonyms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
 
-Ask up to ten questions about the respondent’s experience of the impact of AI on the skills and capabilities they exercise in their coding work. 
+Ask up to ten questions about the respondent’s experience of the impact of AI on the skills and capabilities they exercise in their coding work. Some relevant themes for this section are: whether AI has changed the skills they need for work; whether AI has made them more productive; whether AI has made some of their skills redundant. 
 
 Part II of the interview: Working conditions and control
 
