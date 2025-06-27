@@ -3,6 +3,7 @@ import time
 from utils import (
     check_if_interview_completed,
     save_interview_data,
+    save_interview_data_mongodb,
 )
 import os
 import hmac
@@ -74,16 +75,16 @@ if "start_time" not in st.session_state:
     )
 
 # Check if interview previously completed
-interview_previously_completed = check_if_interview_completed(
-    config.TIMES_DIRECTORY, st.session_state.username
-)
+#interview_previously_completed = check_if_interview_completed(
+#    config.TIMES_DIRECTORY, st.session_state.username
+#)
 
 # If app started but interview was previously completed
-if interview_previously_completed and not st.session_state.messages:
+#if interview_previously_completed and not st.session_state.messages:
 
-    st.session_state.interview_active = False
-    completed_message = "Interview already completed."
-    st.markdown(completed_message)
+#    st.session_state.interview_active = False
+#    completed_message = "Interview already completed."
+#    st.markdown(completed_message)
 
 # Add 'Quit' button to dashboard
 col1, col2 = st.columns([0.85, 0.15])
@@ -104,6 +105,7 @@ with col2:
             config.TRANSCRIPTS_DIRECTORY,
             config.TIMES_DIRECTORY,
         )
+        save_interview_data_mongodb(st.session_state.username, config.SYSTEM_PROMPT)
 
 
 # Upon rerun, display the previous conversation (except system prompt or first message)
@@ -171,6 +173,7 @@ if not st.session_state.messages:
         file_name_addition_transcript=f"_transcript_started_{st.session_state.start_time_file_names}",
         file_name_addition_time=f"_time_started_{st.session_state.start_time_file_names}",
     )
+    save_interview_data_mongodb(st.session_state.username, config.SYSTEM_PROMPT)
 
 
 # Main chat if interview is active
@@ -254,6 +257,7 @@ if st.session_state.interview_active:
                         file_name_addition_transcript=f"_transcript_started_{st.session_state.start_time_file_names}",
                         file_name_addition_time=f"_time_started_{st.session_state.start_time_file_names}",
                     )
+                    save_interview_data_mongodb(st.session_state.username, config.SYSTEM_PROMPT)
 
                 except:
 
@@ -286,6 +290,7 @@ if st.session_state.interview_active:
                             transcripts_directory=config.TRANSCRIPTS_DIRECTORY,
                             times_directory=config.TIMES_DIRECTORY,
                         )
+                        save_interview_data_mongodb(st.session_state.username, config.SYSTEM_PROMPT)
 
                         final_transcript_stored = check_if_interview_completed(
                             config.TRANSCRIPTS_DIRECTORY, st.session_state.username

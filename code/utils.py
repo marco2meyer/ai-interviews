@@ -2,6 +2,7 @@ import streamlit as st
 import hmac
 import time
 import os
+from pymongo import MongoClient
 
 
 # Password screen for dashboard (note: only very basic authentication!)
@@ -87,3 +88,68 @@ def save_interview_data(
         d.write(
             f"Start time (UTC): {time.strftime('%d/%m/%Y %H:%M:%S', time.localtime(st.session_state.start_time))}\nInterview duration (minutes): {duration:.2f}"
         )
+
+
+def save_interview_data_mongodb(username, system_prompt):
+    """Write or update interview data in MongoDB."""
+
+    try:
+        # Get MongoDB credentials from Streamlit secrets
+        mongo_uri = st.secrets["mongo"]["uri"]
+        mongo_db = st.secrets["mongo"]["db"]
+        mongo_collection = st.secrets["mongo"]["collection"]
+
+        # Connect to MongoDB
+        client = MongoClient(mongo_uri)
+        db = client[mongo_db]
+        collection = db[mongo_collection]
+
+        # Prepare transcript, excluding system message
+        transcript_list = []
+        for message in st.session_state.messages:
+            if message["role"] != "system":
+                transcript_list.append({"role": message["role"], "content": message["content"]})
+
+        # Prepare data for MongoDB
+        interview_data = {
+            "last_updated_unix": time.time(),
+            "last_updated_utc": time.strftime('%d/%m/%Y %H:%M:%S', time.localtime(time.time())),
+            "transcript": transcript_list,
+        }
+
+        # If interview is inactive, add end time and duration
+        if not st.session_state.get("interview_active", True):
+            end_time = time.time()
+            duration = (end_time - st.session_state.start_time) / 60
+            interview_data["end_time_unix"] = end_time
+            interview_data["end_time_utc"] = time.strftime('%d/%m/%Y %H:%M:%S', time.localtime(end_time))
+            interview_data["duration_minutes"] = f"{duration:.2f}"
+
+        # Use the unique combination of username and start_time as the filter for the document
+        query = {
+            "username": username,
+            "start_time_unix": st.session_state.start_time
+        }
+
+        # Use $set to update fields, and $setOnInsert to set values only on creation
+        update = {
+            "$set": interview_data,
+            "$setOnInsert": {
+                "username": username,
+                "start_time_unix": st.session_state.start_time,
+                "start_time_utc": time.strftime('%d/%m/%Y %H:%M:%S', time.localtime(st.session_state.start_time)),
+                "system_prompt": system_prompt,
+            }
+        }
+
+        # Update the document, or insert it if it doesn't exist
+        collection.update_one(query, update, upsert=True)
+
+        # Close the connection
+        client.close()
+
+    except Exception as e:
+        # In case of any error (e.g., secrets not configured), do not stop the app
+        # Optionally, log the error for debugging
+        # st.error(f"MongoDB connection error: {e}")
+        pass
