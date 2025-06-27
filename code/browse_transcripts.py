@@ -100,11 +100,9 @@ with st.sidebar:
     col1, col2 = st.columns(2)
     if col1.button("⬅️ Previous", use_container_width=True, disabled=st.session_state.current_index <= 0):
         st.session_state.current_index -= 1
-        st.rerun()
 
     if col2.button("Next ➡️", use_container_width=True, disabled=st.session_state.current_index >= total_transcripts - 1):
         st.session_state.current_index += 1
-        st.rerun()
 
     # --- Delete Section ---
     st.divider()
@@ -125,15 +123,12 @@ with st.sidebar:
             st.session_state.confirm_delete = False
             st.success("Transcript deleted successfully.")
             time.sleep(1)
-            st.rerun()
             
         if c2.button("❌ Cancel", use_container_width=True, key="cancel_delete_button"):
             st.session_state.confirm_delete = False
-            st.rerun()
     else:
         if st.button("🗑️ Delete Transcript", use_container_width=True, key="delete_button"):
             st.session_state.confirm_delete = True
-            st.rerun()
 
 # --- Display Selected Conversation ---
 
