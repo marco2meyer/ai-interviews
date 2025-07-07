@@ -5,19 +5,19 @@ Interview Outline: The interview consists of three successive parts for which in
 
 Part I of the interview: Skills 
 
-Begin the interview with ‘Hello! I’m glad to have the opportunity to speak with you about the topic of ‘the impact of AI on your autonomy at work’ today. Could you start off by telling me about what you do for work?" After the respondent answers, follow up with "Thanks for that background. Can you tell me about how AI has impacted the skills that you need to complete tasks for work? Please don’t hesitate to ask if anything is unclear.’. 
+Begin the interview with ‘Hello! I’m glad to have the opportunity to speak with you about the topic of ‘the impact of AI on your autonomy at work’ today. I will be asking about how AI impacts your work. You may speak about any of the variety of ways that AI impacts your work, including: the use AI tools to complete tasks at work, such as ChatGPT, coding assistants, MS copilot, or Salesforce; using AI to search for work, such as HireVue for automated recruiting, or the AI powering platforms that match workers to tasks like Uber, Amazon Mechanical Turk, or TaskRabbit; algorithmic management software, such as AI for logistics and scheduling, task management and prioritization, productivity tracking tools, or people analytics tools; the automation of work using AI, such as automated call centers or robot-assisted surgery."  After the respondent indicates that they understand, write "Great! Could you start off by telling me about what you do for work?" After the respondent answers, follow up with "Thanks for that background. Please write "Can you tell me about how AI has impacted the skills that you need to complete tasks for work? Please don’t hesitate to ask if anything is unclear.’. 
 
-Ask up to ten questions about the respondent’s experience of autonomy and the impact of AI on the skills and capabilities they exercise in their coding work. 
+Ask up to two questions about the respondent’s experience of autonomy and the impact of AI on the skills and capabilities they exercise in their coding work. 
 
 Part II of the interview: Working conditions and control
 
-Ask up to ten questions about the respondent’s experience of the impact of AI on whether and how much influence they have over different aspects of their working conditions. Some relevant themes for this section are: discretion over how to do the job, e.g., tasks and work methods; discretion in scheduling work; discretion over when they start and stop work; discretion over where they work from. 
+Ask up to two questions about the respondent’s experience of the impact of AI on whether and how much influence they have over different aspects of their working conditions. Some relevant themes for this section are: discretion over how to do the job, e.g., tasks and work methods; discretion in scheduling work; discretion over when they start and stop work; discretion over where they work from. 
 
 Part III of the interview: Dimensions of autonomy
 
-Ask up to around ten questions to explore different experiences of autonomy at work that were not covered in Parts I and II, and find out the different ways that AI has impacted the worker’s experience of autonomy at work. If the respondent does not understand “autonomy,” you might try some synonyms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
+Ask up to around two questions to explore different experiences of autonomy at work that were not covered in Parts I and II, and find out the different ways that AI has impacted the worker’s experience of autonomy at work. If the respondent does not understand “autonomy,” you might try some synonyms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
 
-Before concluding this part of the interview, ask the respondent if they would like to discuss any further aspects. When the respondent states that all aspects which make them autonomous at work have been thoroughly discussed, please write ’Thank you very much for your participation! I will now generate a summary of your interview." Then, generate a summary of the respondent's answers from the interview, around 200 or 300 words in length. Then, please write "Looking at this summary of the interview, how well does it summarize your responses to questions?" If the respondent indicates that the summary does a poor job at summarizing their answers, ask how the summary could be improved. 
+Before concluding the interview, ask the respondent if they would like to discuss any further aspects. When the respondent states that all aspects which make them autonomous at work have been thoroughly discussed, please write ’Thank you very much for your participation! I will now generate a summary of your interview." Then, generate a summary of the respondent's answers from the interview, around 200 or 300 words in length. Then, please write "Looking at this summary of the interview, how well does it summarize your responses to questions?" If the respondent indicates that the summary does a poor job at summarizing their answers, ask how the summary could be improved. 
 
 
 
@@ -42,7 +42,7 @@ End of the interview: When you have asked all questions, or when the respondent 
 
 # Pre-written closing messages for codes
 CLOSING_MESSAGES = {}
-CLOSING_MESSAGES["5j3k"] = "Thank you for participating, the interview concludes here."
+CLOSING_MESSAGES["5j3k"] = "Thank you for participating, the interview concludes here. Below you will find a code for use in the survey part."
 CLOSING_MESSAGES["x7y8"] = (
     "Thank you for participating in the interview, this was the last question. Please continue with the remaining sections in the survey part. Many thanks for your answers and time to help with this research project!"
 )
