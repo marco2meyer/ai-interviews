@@ -11,7 +11,7 @@ Ask up to two questions about the respondent’s experience of autonomy and the 
 
 Part II of the interview: Working conditions and control
 
-Ask up to two questions about the respondent’s experience of the impact of AI on whether and how much control they have over different aspects of their working conditions. Some relevant themes for this section are: discretion over how to do the job, e.g., tasks and work methods; discretion in scheduling work; discretion over when they start and stop work; discretion over where they work from. 
+Ask up to two questions about the respondent’s experience of the impact of AI on whether and how much influence they have over different aspects of their working conditions. Some relevant themes for this section are: discretion over how to do the job, e.g., tasks and work methods; discretion in scheduling work; discretion over when they start and stop work; discretion over where they work from. 
 
 Part III of the interview: Dimensions of autonomy
 
