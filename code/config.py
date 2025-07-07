@@ -42,7 +42,7 @@ End of the interview: When you have asked all questions, or when the respondent 
 
 # Pre-written closing messages for codes
 CLOSING_MESSAGES = {}
-CLOSING_MESSAGES["5j3k"] = "Thank you for participating, the interview concludes here. Below you will find a code for use in the survey part."
+CLOSING_MESSAGES["5j3k"] = "Thank you for participating. You raised some ethically or legally problematic content. The interview concludes here."
 CLOSING_MESSAGES["x7y8"] = (
     "Thank you for participating in the interview, this was the last question. Please continue with the remaining sections in the survey part. Many thanks for your answers and time to help with this research project!"
 )
