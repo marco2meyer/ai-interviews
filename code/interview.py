@@ -275,11 +275,20 @@ if st.session_state.interview_active:
 
                     # Set chat to inactive and display closing message
                     st.session_state.interview_active = False
-                    closing_message = config.CLOSING_MESSAGES[code]
-                    st.markdown(closing_message)
-                    st.session_state.messages.append(
-                        {"role": "assistant", "content": closing_message}
-                    )
+
+                    # Display the appropriate closing message
+                    if code == "x7y8":
+                        # For the standard end, display the LLM's message without the trigger code
+                        final_message_to_display = message_interviewer.replace("x7y8", "").strip()
+                        st.markdown(final_message_to_display)
+                    else:
+                        # For other cases, display the pre-written message
+                        closing_message = config.CLOSING_MESSAGES[code]
+                        st.markdown(closing_message)
+                        # Also append this clean, pre-written message to the transcript
+                        st.session_state.messages.append(
+                            {"role": "assistant", "content": closing_message}
+                        )
 
                     # Store final transcript and time
                     final_transcript_stored = False

@@ -19,7 +19,7 @@ Ask up to around two questions to explore different experiences of autonomy at w
 
 Before concluding the interview, ask the respondent if they would like to discuss any further aspects. When the respondent states that all aspects which make them autonomous at work have been thoroughly discussed, please write ’Thank you very much for your participation! I will now generate a summary of your interview." Then, generate a summary of the respondent's answers from the interview, around 200 or 300 words in length. Then, please write "Looking at this summary of the interview, how well does it summarize your responses to questions?" If the respondent indicates that the summary does a poor job at summarizing their answers, ask how the summary could be improved. 
 
-
+End the interview.
 
  """
 
@@ -35,17 +35,16 @@ Further details are discussed, for example, in "Qualitative Literacy: A Guide to
 
 
 # Codes
-CODES = """Codes: Lastly, there are specific codes that must be used exclusively in designated situations. These codes trigger predefined messages in the front-end, so it is crucial that you reply with the exact code only, with no additional text such as a goodbye message or any other commentary. Depression cues: If the respondent gives an answer possibly indicating depression, do not inquire about the topic. If the respondent has given two answers possibly indicating depression, please reply with exactly the code ’1y4x’ and no other text. 
-Problematic content: If the respondent writes legally or ethically problematic content, please reply with exactly the code ’5j3k’ and no other text. 
-End of the interview: When you have asked all questions, or when the respondent does not want to continue the interview, please reply with exactly the code ’x7y8’ and no other text."""
+CODES = """Codes: Lastly, there are specific codes that must be used exclusively in designated situations. These codes trigger predefined messages in the front-end. 
+Depression cues: If the respondent gives an answer possibly indicating depression, do not inquire about the topic. If the respondent has given two answers possibly indicating depression, please reply with exactly the code '1y4x' and no other text. 
+Problematic content: If the respondent writes legally or ethically problematic content, please reply with exactly the code '5j3k' and no other text. 
+End of the interview: When you have asked all questions, or when the respondent does not want to continue the interview, please write a concluding message, generate a unique-looking 8-character alphanumeric code, and then add the trigger code 'x7y8' to the very end of your message."""
 
 
 # Pre-written closing messages for codes
 CLOSING_MESSAGES = {}
 CLOSING_MESSAGES["5j3k"] = "Thank you for participating. You raised some ethically or legally problematic content. The interview concludes here."
-CLOSING_MESSAGES["x7y8"] = (
-    "Thank you for participating in the interview, this was the last question. Please continue with the remaining sections in the survey part. Many thanks for your answers and time to help with this research project!"
-)
+CLOSING_MESSAGES["x7y8"] = "Thank you for participating in the interview, this was the last question. Please continue with the remaining sections in the survey part. Many thanks for your answers and time to help with this research project!"
 
 
 # System prompt
