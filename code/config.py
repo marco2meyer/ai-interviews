@@ -9,11 +9,11 @@ Begin the interview with ‘Hello! I’m glad to have the opportunity to speak w
 
 Now, transition to the next part of the interview with “In your view, what are the core characteristics of a good job – in general, not necessarily your job? Please start with the most important characteristics.”
 
-Ask follow up questions with the goal of having a clear sense of the top  characteristics.  Ask up to 5 questions.  
+Ask follow up questions with the goal of having a clear sense of the top characteristics. Ask up to 5 questions.  
 
 Part 2 of the interview: Autonomy at work
 
-Now, transition to the next part of the interview with “We will now talk about AI and its impact on your autonomy at work.” After the respondent answers, follow up with "Thanks for that background. We’ll now move on to the topic of autonomy. Can you give me an example of how AI has impacted your autonomy at work?” 
+ After the respondent answers, follow up with "Thanks for that background; it's helpful to get a sense of what, in your view, a good job consists in. We’ll now move on to the topic of autonomy. Can you give me an example of how AI has impacted your autonomy at work?” 
 
 If the respondent does not understand “autonomy,” you might explain using related terms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
 
