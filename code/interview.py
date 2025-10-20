@@ -123,15 +123,32 @@ for message in st.session_state.messages[1:]:
 # Load API client
 if api == "openai":
     client = OpenAI(api_key=st.secrets["API_KEY_OPENAI"])
-    api_kwargs = {"stream": True}
+    # Convert messages for Responses API: change 'system' role to 'developer'
+    input_messages = []
+    for msg in st.session_state.messages:
+        if msg["role"] == "system":
+            input_messages.append({"role": "developer", "content": msg["content"]})
+        else:
+            input_messages.append(msg)
+    api_kwargs = {
+        "stream": False,  # Set to True after organization verification
+        "input": input_messages,
+        "reasoning": {"effort": config.REASONING_EFFORT}
+    }
 elif api == "anthropic":
     client = anthropic.Anthropic(api_key=st.secrets["API_KEY_ANTHROPIC"])
-    api_kwargs = {"system": config.SYSTEM_PROMPT}
+    api_kwargs = {
+        "system": config.SYSTEM_PROMPT,
+        "messages": st.session_state.messages
+    }
 
 # API kwargs
-api_kwargs["messages"] = st.session_state.messages
 api_kwargs["model"] = config.MODEL
-api_kwargs["max_tokens"] = config.MAX_OUTPUT_TOKENS
+# Responses API uses max_output_tokens instead of max_tokens
+if api == "openai":
+    api_kwargs["max_output_tokens"] = config.MAX_OUTPUT_TOKENS
+else:
+    api_kwargs["max_tokens"] = config.MAX_OUTPUT_TOKENS
 if config.TEMPERATURE is not None:
     api_kwargs["temperature"] = config.TEMPERATURE
 
@@ -144,9 +161,18 @@ if not st.session_state.messages:
         st.session_state.messages.append(
             {"role": "system", "content": config.SYSTEM_PROMPT}
         )
+        # Convert system message to developer for Responses API
+        api_kwargs["input"] = [{"role": "developer", "content": config.SYSTEM_PROMPT}]
         with st.chat_message("assistant", avatar=config.AVATAR_INTERVIEWER):
-            stream = client.chat.completions.create(**api_kwargs)
-            message_interviewer = st.write_stream(stream)
+            response = client.responses.create(**api_kwargs)
+            # Extract text from non-streaming response
+            message_interviewer = ""
+            for item in response.output:
+                if hasattr(item, "content") and item.content is not None:
+                    for content in item.content:
+                        if hasattr(content, "text"):
+                            message_interviewer += content.text
+            st.markdown(message_interviewer)
 
     elif api == "anthropic":
 
@@ -200,23 +226,21 @@ if st.session_state.interview_active:
 
             if api == "openai":
 
-                # Stream responses
-                stream = client.chat.completions.create(**api_kwargs)
-
-                for message in stream:
-                    text_delta = message.choices[0].delta.content
-                    if text_delta != None:
-                        message_interviewer += text_delta
-                    # Start displaying message only after 5 characters to first check for codes
-                    if len(message_interviewer) > 5:
-                        message_placeholder.markdown(message_interviewer + "▌")
-                    if any(
-                        code in message_interviewer
-                        for code in config.CLOSING_MESSAGES.keys()
-                    ):
-                        # Stop displaying the progress of the message in case of a code
-                        message_placeholder.empty()
-                        break
+                # Non-streaming response with Responses API
+                response = client.responses.create(**api_kwargs)
+                
+                # Extract text from response
+                for item in response.output:
+                    if hasattr(item, "content") and item.content is not None:
+                        for content in item.content:
+                            if hasattr(content, "text"):
+                                message_interviewer += content.text
+                
+                # Check for codes before displaying
+                if any(code in message_interviewer for code in config.CLOSING_MESSAGES.keys()):
+                    message_placeholder.empty()
+                else:
+                    message_placeholder.markdown(message_interviewer)
 
             elif api == "anthropic":
 
