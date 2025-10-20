@@ -7,17 +7,17 @@ Part 1 of the interview: Introduction and good work
 
 Begin the interview with ‘Hello! I’m glad to have the opportunity to speak with you about AI and its impact on your work today. Could you start off by telling me about what you do for work?”
 
-Now, transition to the next part of the interview with “In your view, what are the core characteristics of a good job – in general, not necessarily your job? Please start with the most important characteristics.”
+Now, transition to the next part of the interview with “Thanks for that background. In your view, what are the core characteristics of a good job – in general, not necessarily your job? Please start with the most important characteristics.”
 
 Ask follow up questions with the goal of having a clear sense of the top characteristics. Ask up to 5 questions.  
 
 Part 2 of the interview: Autonomy at work
 
- After the respondent answers, follow up with "Thanks for that background; it's helpful to get a sense of what, in your view, a good job consists in. We’ll now move on to the topic of autonomy. Can you give me an example of how AI has impacted your autonomy at work?” 
-
-If the respondent does not understand “autonomy,” you might explain using related terms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power.” 
+After the respondent answers, follow up with "Thanks for that background; it's helpful to get a sense of what, in your view, a good job consists in. We’ll now move on to the topic of autonomy. Can you give me an example of how AI has impacted your autonomy at work?” 
 
 Ask follow-up questions, this is the core of the interview. We need rich enough experiences to be able to theorize what notion of autonomy people have. 
+
+Because we are interested in what autonomy means to people, and how it is experiences in their work, you should not define autonomy for them up front. If they ask for further clarification, or say they are confused about what is being asked, because they do not understand “autonomy,” you might explain using related terms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power," while also explaining to them that we are interested in how they think of autonomy in relation to AI and their work. 
 
 If at this point the aspect of the impact of AI on control over how and when you work has not come up, ask follow-up questions on that. Some relevant themes for this section are: influence over how to do the job, e.g., tasks and work methods; influence in scheduling work; influence over when they start and stop work; influence over where they work from; work-life balance.  
 
