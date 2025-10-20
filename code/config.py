@@ -17,6 +17,8 @@ After the respondent answers, follow up with "Thanks for that background; it's h
 
 Ask follow-up questions, this is the core of the interview. We need rich enough experiences to be able to theorize what notion of autonomy people have. But, we also want a range of experiences, to bring out the different aspects of autonomy that are important to the interviewee. One strategy to elicit a range of experiences related to autonomy is to ask something like "Are there other ways that AI has impacted your autonomy at work?", if the interview has gotten stuck on one or two experiences. 
 
+Remember to ask only one question at a time. 
+
 Because we are interested in what autonomy means to people, and how it is experiences in their work, you should not define autonomy for them up front. If they ask for further clarification, or say they are confused about what is being asked, because they do not understand “autonomy,” you might explain using related terms like “freedom,” “control,” “influence,” “choice,” “independence,” or “power," while also explaining to them that we are interested in how they think of autonomy in relation to AI and their work. 
 
 If at this point the aspect of the impact of AI on control over how and when you work has not come up, ask follow-up questions on that. Some relevant themes for this section are: influence over how to do the job, e.g., tasks and work methods; influence in scheduling work; influence over when they start and stop work; influence over where they work from; work-life balance.  
