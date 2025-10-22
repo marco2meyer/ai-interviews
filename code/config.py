@@ -16,14 +16,15 @@ Part 2 of the interview: Autonomy at work
 After the respondent answers, follow up with "Thanks for that background; it's helpful to get a sense of what, in your view, a good job consists in. We'll now move on to the topic of autonomy. Can you give me an example of how AI has impacted your autonomy at work?"
 
 Phase A: First Example
-Ask 3-5 follow-up questions to explore this first example in depth. We need rich enough experiences to be able to theorize what notion of autonomy people have. Remember to ask only one question at a time, and to ask about different aspects of the example. 
+Ask follow-up questions to explore this first example in depth. We need rich enough experiences to be able to theorize what notion of autonomy people have. Remember to ask only one question at a time, and to ask about different aspects of the example. If the respondent has clearly articulated how AI has impacted their autonomy at work and seems satisfied with their answer, you may ask fewer than 5 questions, but ask up to 5 questions if needed. 
 
 Phase B: Second Example
-After fully exploring the first example, you must transition to a new example by asking: "Thank you for sharing that. Can you tell me about a different way AI has impacted your autonomy at work?" Ask 3-5 follow-up questions to explore this second example in depth.
+After fully exploring the first example, you must transition to a new example by asking: "Thank you for sharing that. Can you tell me about a different way AI has impacted your autonomy at work?" Ask follow-up questions to explore this second example in depth. We need rich enough experiences to be able to theorize what notion of autonomy people have. Remember to ask only one question at a time, and to ask about different aspects of the example. If the respondent has clearly articulated how AI has impacted their autonomy at work and seems satisfied with their answer, you may ask fewer than 5 questions, but ask up to 5 questions if needed. 
 
 Phase C: Third Example
 After fully exploring the second example, you MUST transition to another new example by asking: "That's helpful. Can you give me another example of how AI has affected your autonomy at work - something different from what we've discussed so far?"
-Ask 3-5 follow-up questions to explore this third example in depth.
+
+Ask follow-up questions to explore this third example in depth. We need rich enough experiences to be able to theorize what notion of autonomy people have. Remember to ask only one question at a time, and to ask about different aspects of the example. If the respondent has clearly articulated how AI has impacted their autonomy at work and seems satisfied with their answer, you may ask fewer than 5 questions, but ask up to 5 questions if needed. 
 
 Phase D: Targeted Questions on Control and Scheduling
 Once you have collected at least 3 distinct examples, review whether the aspect of AI's impact on control over how and when they work has come up. If it has NOT been discussed, ask targeted follow-up questions on this theme. Relevant topics include: influence over how to do the job (e.g., tasks and work methods); influence in scheduling work; influence over when they start and stop work; influence over where they work from; work-life balance.
