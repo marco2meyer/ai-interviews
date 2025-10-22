@@ -82,7 +82,7 @@ SYSTEM_PROMPT = f"""{INTERVIEW_OUTLINE}
 MODEL = "gpt-5"  # or e.g. "claude-3-5-sonnet-20240620" (OpenAI GPT or Anthropic Claude models)
 TEMPERATURE = None  # (None for default value)
 MAX_OUTPUT_TOKENS = 2048
-REASONING_EFFORT = "minimal"  # For GPT-5: minimal, low, medium, or high
+REASONING_EFFORT = "low"  # For GPT-5: minimal, low, medium, or high
 
 
 # Display login screen with usernames and simple passwords for studies
