@@ -226,6 +226,15 @@ if st.session_state.interview_active:
 
             if api == "openai":
 
+                # Rebuild input_messages to include the user message that was just appended
+                input_messages = []
+                for msg in st.session_state.messages:
+                    if msg["role"] == "system":
+                        input_messages.append({"role": "developer", "content": msg["content"]})
+                    else:
+                        input_messages.append(msg)
+                api_kwargs["input"] = input_messages
+
                 # Non-streaming response with Responses API
                 response = client.responses.create(**api_kwargs)
                 

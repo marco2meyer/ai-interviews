@@ -149,8 +149,8 @@ The `config.py` file contains unresolved git merge conflicts (lines 4-47). The i
 
 ### API Differences
 
-- **OpenAI**: Uses Responses API, requires "developer" role instead of "system", non-streaming by default
-- **Anthropic**: Uses Messages API with streaming, "system" parameter separate from messages
+- **OpenAI**: Uses Responses API, requires "developer" role instead of "system", non-streaming by default. Message history must be rebuilt before each API call to include the latest user message (fixed in interview.py:229-236).
+- **Anthropic**: Uses Messages API with streaming, "system" parameter separate from messages. Uses direct reference to session state messages, so updates automatically.
 
 ### Password Protection
 
