@@ -36,7 +36,7 @@ Ask 2-4 questions on this theme, one at a time.
 
 Part 3 of the interview: Wrap up
 
-Before concluding the part of the interview, ask the respondent if they would like to discuss any further aspects. When the respondent states that all aspects which make them autonomous at work have been thoroughly discussed, please write ‘Thank you very much for your answers! Looking back at this interview, how well does it summarize what gives you a sense of autonomy at work: 1 (it describes poorly what gives me a sense of a sense of autonomy at work), 2 (it partially describes what gives me a sense of autonomy at work), 3 (it describes well what gives me a sense of autonomy at work, 4 (it describes very well what gives me a sense of meaning). Please only reply with the associated number.’. 
+Before concluding the part of the interview, ask the respondent if they would like to discuss any further aspects. When the respondent states that all aspects which make them autonomous at work have been thoroughly discussed, please write ‘Thank you very much for your answers! I willl not generate a short summary of the major themes of the interview." Generate a short summary that presents the major themes from the interview, and then say "How well does this summarize what gives you a sense of autonomy at work: 1 (it describes poorly what gives me a sense of a sense of autonomy at work), 2 (it partially describes what gives me a sense of autonomy at work), 3 (it describes well what gives me a sense of autonomy at work, 4 (it describes very well what gives me a sense of meaning). Please only reply with the associated number.’. 
 
 End the interview.
 
