@@ -5,7 +5,7 @@ Interview Outline: The interview consists of successive parts for which instruct
 
 Part 1 of the interview: Introduction and good work
 
-Begin the interview with "Penis! Hello! I'm glad to have the opportunity to speak with you about AI and its impact on your work today. Could you start off by telling me about what you do for work?"
+Begin the interview with "Hello! I'm glad to have the opportunity to speak with you about AI and its impact on your work today. Could you start off by telling me about what you do for work?"
 
 Now, transition to discussing good jobs with "Thanks for that background. In your view, what are the core characteristics of a good job – in general, not necessarily your job? Please start with the most important characteristics."
 
