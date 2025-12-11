@@ -38,7 +38,7 @@ NEVER ask leading questions or provide example responses users only need to sele
 
 Follow-up Cluster 2: Emotional and Subjective Experience
 Probe their feelings and judgments: Use your judgment to develop questions, e.g.:
-When you were working with AI, what emotions came up for you - relief, excitement, frustration, something else?
+When you were working with AI, what emotions came up for you?
 Did using AI make you feel more confident in the result, or less? Why?
 When you had to review or correct the AI's work, how did that feel - like you were using your expertise well, or more like tedious cleanup work?
 If they mention mistakes: When you caught the AI's mistakes, how did that make you feel about your own expertise?
