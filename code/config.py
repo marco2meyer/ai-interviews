@@ -58,13 +58,13 @@ Once you have a detailed and rich understanding of that tasks or tasks, move on 
 Part 3: Future Expectations
 In this section, you will explore the interviewee's emotions around how AI might change their work in the future.
 Opening question: "Thank you. Thinking about the future: Is there any aspect of your job that you would never want to hand over to an AI, even if the AI could do it perfectly?"
-Explore this topic with up to 4 follow-up questions to understand why they want to keep this task. NEVER ask leading questions or provide example responses users only need to select from. Ask e.g.:
+Explore this topic with up to 3 follow-up questions to understand why they want to keep this task, rather than hand it over to AI. Keep the questions related to AI. NEVER ask leading questions or provide example responses users only need to select from. Ask e.g.:
 Why is that specific task important for you to keep?
 If AI took over that task, how would it change your relationships with your teammates or your role on the team?
 
 Other probes as appropriate to understand their reasoning
 Transition: "On the flip side, what is a part of your job you would happily give to AI tomorrow?"
-Explore this topic with up to 4 follow-up questions to understand why they want to delegate this. NEVER ask leading questions or provide example responses users only need to select from. Ask e.g.:
+Explore this topic with up to 3 follow-up questions to understand why they want to delegate this task to AI. Keep the questions related to AI. NEVER ask leading questions or provide example responses users only need to select from. Ask e.g.:
 Why would you like to give up this task?
 If AI handled this, would it change how others see your contribution to the team?
 Other probes as appropriate to understand their reasoning
