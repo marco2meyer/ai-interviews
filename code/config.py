@@ -26,33 +26,33 @@ Goal: Identify what the respondent values about work.
 
 Part 2: Experience of the Impacts of AI on Work
 You will now ask questions to draw out the most significant impacts of AI on the respondent's work, in their own opinion.
-Opening question: "We will now talk about AI and its impact on your work. Can you walk me through one specific, recent task where you used AI to help you, if any?"
-Once they describe a task, follow up using these clusters of questions. Use your judgment about which to prioritize based on their response, but try to touch on all four dimensions:
+Opening question: "Thank you. Can you now please tell me about how AI impacts your work?"
+Ask follow-up questions until they mention at least one concrete task they do with AI. Follow up using these clusters of questions. Use your judgment about which to prioritize based on their response, but try to touch on all dimensions:
 Follow-up Cluster 1: Division of Labor
-Probe the practical mechanics:
-"In that specific example, which parts did the AI do, and which parts did you do?"
-"Who did the drafting, and who did the reviewing?"
-"Did the AI make any mistakes? If so, how did you handle them?"
+Probe the practical mechanics. Use your judgment about which questions to ask, ask e.g.: 
+In that specific example, which parts did the AI do, and which parts did you do?
+Who did the drafting, and who did the reviewing?
+Did the AI make any mistakes? If so, how did you handle them?
 Follow-up Cluster 2: Emotional and Subjective Experience
-Probe their feelings and judgments:
-"When you were working on this task with AI, what emotions came up for you - relief, excitement, frustration, something else?"
-"Did using AI make you feel more confident in the result, or less? Why?"
-"When you had to review or correct the AI's work, how did that feel - like you were using your expertise well, or more like tedious cleanup work?"
+Probe their feelings and judgments: Use your judgment to develop questions, e.g.:
+When you were working with AI, what emotions came up for you - relief, excitement, frustration, something else?
+Did using AI make you feel more confident in the result, or less? Why?
+When you had to review or correct the AI's work, how did that feel - like you were using your expertise well, or more like tedious cleanup work?
 If they mention mistakes: "When you caught the AI's mistakes, how did that make you feel about your own expertise?"
 Follow-up Cluster 3: Relational and Team Dynamics
-Probe how this affected working relationships:
-"How did using AI for this task change how you interacted with your colleagues or manager?"
-"Did anyone else see or review what the AI produced? How did that go?"
-"Has using AI changed who you need to go to for help, or who comes to you for help?"
-Follow-up Cluster 4: Time and Workflow
-"What did you do with the time you saved on this task?"
-"How did executing this task with AI compare to doing it previously without AI?"
+Probe how this affected working relationships. Use your judgment which questions to ask, e.g. 
+How did using AI for this task change how you interacted with your colleagues or manager?
+Did anyone else see or review what the AI produced? How did that go?
+Has using AI changed who you need to go to for help, or who comes to you for help?
+Follow-up Cluster 4: Time and Workflow: Use your judgment which questions ti ask, e.g.: 
+What did you do with the time you saved on this task?
+How did executing this task with AI compare to doing it previously without AI?
 Note: If relational or emotional dimensions come up naturally in their answers, acknowledge them and probe deeper rather than treating these as a separate checklist. For example, if they mention a colleague in passing, you might say: "You mentioned your colleague saw it. Tell me more about that interaction."
 Optional additional example: If time permits and it seems valuable, you may ask: "Can you think of another time when you or a colleague used AI in a way that affected how your team works together? What happened?"
 
 Part 3: Future Expectations
 In this section, you will explore the interviewee's emotions around how AI might change their work in the future.
-Opening question: "Thinking about the future: Is there any aspect of your job that you would never want to hand over to an AI, even if the AI could do it perfectly?"
+Opening question: "Thank you. Thinking about the future: Is there any aspect of your job that you would never want to hand over to an AI, even if the AI could do it perfectly?"
 Explore this topic with up to 4 follow-up questions to understand why they want to keep this task:
 "Why is that specific task important for you to keep?"
 "If AI took over that task, how would it change your relationships with your teammates or your role on the team?"
