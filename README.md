@@ -22,6 +22,59 @@ The interview platform is built using the library `streamlit` and the APIs of Op
 - Activate the environment with `conda activate interviews`
 - Start the platform with `streamlit run interview.py`
 
+## Downloading transcripts from MongoDB
+
+The platform includes a script to download and filter interview transcripts from MongoDB to a single text file.
+
+### Basic usage
+
+```bash
+cd code
+conda activate interviews
+python download_transcripts.py
+```
+
+This downloads all interviews with a duration of at least 8 minutes to `code/downloaded_transcripts/all_transcripts.txt`.
+
+### Filtering options
+
+**Exclude specific usernames:**
+```bash
+python download_transcripts.py --exclude-usernames marco
+```
+
+**Exclude multiple users:**
+```bash
+python download_transcripts.py --exclude-usernames marco testuser admin
+```
+
+**Filter by date range:**
+```bash
+python download_transcripts.py --start-date 01/01/2024 --end-date 31/03/2024
+```
+
+**Set minimum duration:**
+```bash
+python download_transcripts.py --min-duration 10
+```
+
+**Combine multiple filters:**
+```bash
+python download_transcripts.py --exclude-usernames marco --start-date 01/01/2024 --end-date 31/03/2024 --min-duration 10
+```
+
+**Get help:**
+```bash
+python download_transcripts.py --help
+```
+
+### Command-line options
+
+- `--min-duration`: Minimum interview duration in minutes (default: 8)
+- `--exclude-usernames`: Space-separated list of usernames to exclude
+- `--start-date`: Start date in DD/MM/YYYY format (e.g., 01/01/2024)
+- `--end-date`: End date in DD/MM/YYYY format (e.g., 31/12/2024)
+
 
 ## Paper and citation
 

@@ -40,8 +40,21 @@ streamlit run browse_transcripts.py
 **Download transcripts from MongoDB:**
 ```bash
 cd code
+# Basic download (all interviews with duration >= 8 minutes)
 python download_transcripts.py
+
+# With filters
+python download_transcripts.py --exclude-usernames marco --start-date 01/01/2024 --end-date 31/03/2024 --min-duration 10
+
+# Get help
+python download_transcripts.py --help
 ```
+
+**Filtering options:**
+- `--min-duration`: Minimum interview duration in minutes (default: 8)
+- `--exclude-usernames`: Space-separated list of usernames to exclude
+- `--start-date`: Start date in DD/MM/YYYY format
+- `--end-date`: End date in DD/MM/YYYY format
 
 ### Testing Single Features
 
@@ -137,9 +150,13 @@ When these codes appear in the AI's response, they trigger predefined closing me
 - Download transcripts as .txt files
 
 **download_transcripts.py**:
-- Standalone script to export all transcripts from MongoDB
-- Filters interviews by minimum duration (8 minutes default)
+- Standalone script to export transcripts from MongoDB with filtering
+- Command-line options for filtering by:
+  - Minimum duration (default: 8 minutes)
+  - Username exclusions (e.g., exclude test users)
+  - Date range (start and end dates in DD/MM/YYYY format)
 - Saves to `code/downloaded_transcripts/all_transcripts.txt`
+- Shows detailed statistics about filtering results
 
 ## Important Notes
 
